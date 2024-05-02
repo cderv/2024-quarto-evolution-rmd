@@ -450,7 +450,7 @@ Christophe Dervieux
 <h2 data-id="quarto-animate-title">Quarto …</h2>
 <p><strong>unifie</strong> + <strong>étend</strong> l’écosystème R Markdown</p>
 <p><strong>unifie</strong> pour les connaisseurs de R Markdown</p>
-<p><strong>étends</strong> pour les personnes qui ne connaissent pas R Markdown</p>
+<p><strong>étend</strong> pour les personnes qui ne connaissent pas R Markdown</p>
 </section>
 </section>
 <section>
@@ -486,8 +486,8 @@ Christophe Dervieux
 </section>
 <section id="objectif-markdown-pour-la-publication-scientifique" class="slide level2">
 <h2>Objectif: Markdown pour la publication scientifique</h2>
-<p><a href="images/scientific-markdown-cropped.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="images/scientific-markdown-cropped.png" height="600"></a></p>
-<aside class="notes">
+
+<img data-src="images/scientific-markdown-cropped.png" class="center r-stretch"><aside class="notes">
 <p>Simplifier l’utilisation de markdown pour le scientifique. Aujourd’hui une bonne alternative mais trop complexe trop vite</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -557,10 +557,13 @@ Christophe Dervieux
 <span id="cb1-32"><a href=""></a>    <span class="ex">publish</span>    <span class="pp">[</span><span class="ss">provider</span><span class="pp">]</span> <span class="pp">[</span><span class="ss">path</span><span class="pp">]</span>     <span class="at">-</span> Publish a document or project to a provider.</span>
 <span id="cb1-33"><a href=""></a>    <span class="ex">check</span>      <span class="pp">[</span><span class="ss">target</span><span class="pp">]</span>              <span class="at">-</span> Verify correct functioning of Quarto installation.</span>
 <span id="cb1-34"><a href=""></a>    <span class="bu">help</span>       <span class="pp">[</span><span class="ss">command</span><span class="pp">]</span>             <span class="at">-</span> Show this help or the help of a sub-command.</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="footer">
+
+</div>
 </section></section>
 <section>
-<section id="moteurs-de-calculs-disponible" class="title-slide slide level1 center">
-<h1>Moteurs de calculs disponible</h1>
+<section id="moteurs-de-calculs-disponibles" class="title-slide slide level1 center">
+<h1>Moteurs de calculs disponibles</h1>
 <ul>
 <li>Knitr</li>
 <li>Jupyter</li>
@@ -572,9 +575,9 @@ Christophe Dervieux
 <section id="knitr" class="slide level2 nostretch smaller">
 <h2>Knitr</h2>
 <p><img data-src="images/rstudio-qmd-how-it-works.png"></p>
-<p>Pour R, Quarto utilise toujours Knitr sous le capot. Par conséquent, <strong><em>la grande majorité des fichiers Rmd existants</em></strong> peuvent être rendus sans modification.</p>
+<p>Pour R, Quarto utilise toujours Knitr sous le capot. Par conséquent, <strong><em>la grande majorité des fichiers Rmd existants</em></strong> peuvent être rendus avec Quarto sans modification.</p>
 <p>La syntaxe standard des options de blocs a changé:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="in">```{{r}}</span></span>
+<div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
 <span id="cb2-2"><a href="" aria-hidden="true" tabindex="-1"></a><span class="in">#| echo: false</span></span>
 <span id="cb2-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="in">#| fig-cap: "Cars"</span></span>
 <span id="cb2-4"><a href="" aria-hidden="true" tabindex="-1"></a><span class="in">plot(cars)</span></span>
@@ -633,8 +636,11 @@ Christophe Dervieux
 <div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> quarto preview notebook.ipynb</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="images/jupyterlab-preview.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="images/jupyterlab-preview.png" class="quarto-figure quarto-figure-center" style="width:70.0%"></a></p>
+<p><a href="images/jupyterlab-preview.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img data-src="images/jupyterlab-preview.png" class="quarto-figure quarto-figure-center" style="width:70.0%"></a></p>
 </figure>
+</div>
+<div class="footer">
+
 </div>
 </section>
 <section id="observable-js" class="slide level2">
@@ -645,6 +651,65 @@ Christophe Dervieux
 </section>
 <section id="section-1" class="slide level2" data-background-image="images/screenshot-ojs.png">
 <h2></h2>
+<div class="footer">
+
+</div>
+</section></section>
+<section>
+<section id="les-formats-quarto" class="title-slide slide level1 center">
+<h1>Les formats Quarto</h1>
+<p>Comme R Markdown, on peut produire différents formats de documents.</p>
+</section>
+<section id="de-multiples-formats" class="slide level2">
+<h2>De multiples formats…</h2>
+<div class="columns">
+<div class="column" style="width:33%;">
+<ul>
+<li><code>format: html</code></li>
+<li><code>format: pdf</code></li>
+<li><code>format: typst</code></li>
+</ul>
+</div><div class="column" style="width:33%;">
+<ul>
+<li><code>format: docx</code></li>
+<li><code>format: pptx</code></li>
+<li><code>format: revealjs</code></li>
+</ul>
+</div><div class="column" style="width:33%;">
+<ul>
+<li><code>format: gfm</code></li>
+<li>…</li>
+</ul>
+</div>
+</div>
+<div class="sourceCode" id="annotated-cell-4"><pre class="sourceCode yaml code-annotation-code code-with-copy code-annotated"><code class="sourceCode yaml"><span id="annotated-cell-4-1"><a href="#annotated-cell-4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="annotated-cell-4-2"><a href="#annotated-cell-4-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="annotated-cell-4-3"><a href="#annotated-cell-4-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">code-fold</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="annotated-cell-4-4"><a href="#annotated-cell-4-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">pdf</span><span class="kw">:</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="1" onclick="event.preventDefault();" href="">1</a><span id="annotated-cell-4-5" class="code-annotation-target"><a href="#annotated-cell-4-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">lof</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="2" onclick="event.preventDefault();" href="">2</a><span id="annotated-cell-4-6" class="code-annotation-target"><a href="#annotated-cell-4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<dl class="code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-4" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-4" data-code-lines="5" data-code-annotation="1"><code>lof</code> = <em>List Of Figures</em></span>
+</dd>
+<dt data-target-cell="annotated-cell-4" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-4" data-code-lines="6" data-code-annotation="2">Exemple d’option commune aux formats HTML et PDF</span>
+</dd>
+</dl>
+<div class="footer">
+
+</div>
+</section>
+<section id="basée-sur-pandoc" class="slide level2">
+<h2>…basée sur Pandoc</h2>
+</section>
+<section id="section-2" class="slide level2" data-background-video="images/quarto-all-formats.mp4" data-background-video-loop="true" data-background-video-muted="true">
+<h2></h2>
+<div class="footer">
+
+</div>
 </section></section>
 <section>
 <section id="une-syntaxe-commune-coté-source" class="title-slide slide level1 center">
@@ -656,7 +721,7 @@ Christophe Dervieux
 <li><p>Thèmes pour le style</p></li>
 </ul>
 </section>
-<section id="unification-par-rapport-à-r-markdown" class="slide level2 smaller">
+<section id="unification-par-rapport-à-r-markdown" class="slide level2 smaller inherit-ul">
 <h2>Unification par rapport à R Markdown</h2>
 <p>L’écosystème R Markdown a été construit sur près d’une décennie - ce qui a entraîné de nombreuses incohérences et duplications.</p>
 <div class="columns">
@@ -684,7 +749,7 @@ Christophe Dervieux
 </ul>
 </div>
 </div>
-<p>Certaines fonctionnalités nécessitent des packages R spécifiques et une syntaxe particulière. Avec Quarto, ces fonctionnalités sont intégrées dans le système de base.</p>
+<p>Certaines fonctionnalités et/ou formats nécessitent des libraires R spécifiques et une syntaxe particulière. Avec Quarto, ces fonctionnalités sont intégrées dans le système de base.</p>
 </section>
 <section id="code-folding-bouton-de-copy" class="slide level2">
 <h2>Code folding &amp; bouton de copy</h2>
@@ -736,7 +801,9 @@ Christophe Dervieux
 </div>
 </div>
 </div>
+<div class="make-smaller">
 <p>Tabset syntax: <a href="https://quarto.org/docs/output-formats/html-basics.html#tabsets" class="uri">https://quarto.org/docs/output-formats/html-basics.html#tabsets</a></p>
+</div>
 </section>
 
 <section id="appliquer-un-style-avec-des-thèmes" class="slide level2">
@@ -802,15 +869,24 @@ Christophe Dervieux
 <li><p>Avec la syntaxe <a href="https://quarto.org/docs/authoring/cross-references.html#subfigures">markdown brute</a></p></li>
 <li><p>Avec les options pour <a href="https://quarto.org/docs/authoring/cross-references.html#computations">les cellules éxécutés avec Knitr or Jupyter</a></p></li>
 </ul>
+<div class="footer">
+
+</div>
 </section>
-<section id="section-4" class="slide level2" data-background-image="images/screenshot-markdown-figures.png">
+<section id="section-5" class="slide level2" data-background-image="images/screenshot-markdown-figures.png">
 <h2></h2>
+<div class="footer">
+
+</div>
 </section>
-<section id="section-5" class="slide level2" data-background-image="images/screenshot-knitr-figures.png">
+<section id="section-6" class="slide level2" data-background-image="images/screenshot-knitr-figures.png">
 <h2></h2>
+<div class="footer">
+
+</div>
 </section>
-<section id="advanced-page-layout" class="slide level2">
-<h2>Advanced page layout</h2>
+<section id="mise-en-page-avancée" class="slide level2">
+<h2>Mise en page avancée</h2>
 <p>Fonctionnalités avancées de mise en page inspirées de Tutfe, Distill et Hugo Prose.</p>
 <ul>
 <li>Figures et tableaux couvrant toute la page</li>
@@ -832,9 +908,7 @@ Christophe Dervieux
           display:block!important;
       }</style></aside>
 </section>
-<section id="section-6" class="slide level2" data-background-image="images/screenshot-page-layout.png">
-<h2></h2>
-</section>
+
 <section id="figurelayout-panels" class="slide level2 smaller">
 <h2>Figure/Layout Panels</h2>
 <div class="columns">
@@ -861,7 +935,7 @@ Christophe Dervieux
 <h2>Callouts</h2>
 <p>Fonctionne dans les différents formats: <a href="https://quarto-dev.github.io/quarto-gallery/page-layout/tufte.html#references">HTML</a>, <a href="https://quarto-dev.github.io/quarto-gallery/page-layout/tufte.pdf">PDF</a>, MS Word, et ePub</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
-<span id="cb9-2"><a href="" aria-hidden="true" tabindex="-1"></a>Notez qu'il existe cinq types utilisables : </span>
+<span id="cb9-2"><a href="" aria-hidden="true" tabindex="-1"></a>Note that there are five types of callouts, including:</span>
 <span id="cb9-3"><a href="" aria-hidden="true" tabindex="-1"></a><span class="in">`note`</span>, <span class="in">`tip`</span>, <span class="in">`warning`</span>, <span class="in">`caution`</span>, et <span class="in">`important`</span>.</span>
 <span id="cb9-4"><a href="" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
@@ -914,11 +988,14 @@ Christophe Dervieux
 <div class="columns">
 <div class="column" style="width:50%;">
 <h4 id="completion">Completion</h4>
-<p><a href="images/yaml-completion.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="images/yaml-completion.png" class="illustration" style="width:80.0%"></a></p>
+<p><a href="images/yaml-completion.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img data-src="images/yaml-completion.png" class="illustration" style="width:80.0%"></a></p>
 </div><div class="column" style="width:50%;">
 <h4 id="diagnostics">Diagnostics</h4>
-<p><a href="images/yaml-diagnostics.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img data-src="images/yaml-diagnostics.png" class="illustration" style="width:80.0%"></a></p>
+<p><a href="images/yaml-diagnostics.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img data-src="images/yaml-diagnostics.png" class="illustration" style="width:80.0%"></a></p>
 </div>
+</div>
+<div class="footer">
+
 </div>
 </section>
 <section id="publier-ses-productions" class="slide level2 smaller">
@@ -946,6 +1023,9 @@ Christophe Dervieux
 <span id="cb14-19"><a href="" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-20"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="ex">Accounts</span> are configured interactively during publishing.</span>
 <span id="cb14-21"><a href="" aria-hidden="true" tabindex="-1"></a>  <span class="ex">Manage/remove</span> accounts with: quarto publish accounts</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="footer">
+
+</div>
 </section></section>
 <section>
 <section id="advanced-formats" class="title-slide slide level1 center">
@@ -963,11 +1043,11 @@ Christophe Dervieux
 <div class="columns">
 <div class="column">
 <ul>
-<li><p>Profondeur et organisation arbitraires du contenu</p></li>
-<li><p>Navigation à plusieurs niveaux (barre de navigation / barre latérale / hybride)</p></li>
-<li><p>Recherche en texte intégral (côté client ou Algolia)</p></li>
-<li><p>Fonctionnalité de “gel” (<em>freeze</em>) des contenus exécutés par les moteurs.</p></li>
-<li><p>Exemple : <a href="https://quarto.org" class="uri">https://quarto.org</a> et plus encore dans la <a href="https://quarto.org/docs/gallery/#websites">gallerie</a></p></li>
+<li>Profondeur et organisation arbitraires du contenu</li>
+<li>Navigation à plusieurs niveaux (barre de navigation / barre latérale / hybride)</li>
+<li>Recherche en texte intégral (côté client ou Algolia)</li>
+<li>Fonctionnalité de “gel” (<em>freeze</em>) des contenus exécutés par les moteurs.</li>
+<li>Exemple : <a href="https://quarto.org" class="uri">https://quarto.org</a> et plus encore dans la <a href="https://quarto.org/docs/gallery/#websites">gallerie</a></li>
 </ul>
 </div><div class="column make-smaller" style="padding-top: 2em">
 <div class="code-with-filename">
@@ -995,6 +1075,9 @@ Christophe Dervieux
 <span id="cb15-19"><a href="" aria-hidden="true" tabindex="-1"></a><span class="fu">freeze</span><span class="kw">:</span><span class="at"> auto</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
+</div>
+<div class="footer">
+
 </div>
 </section>
 <section id="quarto-books" class="slide level2">
@@ -1035,13 +1118,19 @@ Christophe Dervieux
 </div>
 </div>
 </section>
-<section id="section-7" class="slide level2" data-background-image="images/screenshot-book-hopr.png">
+<section id="section-8" class="slide level2" data-background-image="images/screenshot-book-hopr.png">
 <h2></h2>
+<div class="footer">
+
+</div>
 </section>
 
 
-<section id="section-9" class="slide level2" data-background-image="images/screenshot-blog.png">
+<section id="section-10" class="slide level2" data-background-image="images/screenshot-blog.png">
 <h2></h2>
+<div class="footer">
+
+</div>
 </section>
 <section id="quarto-presentations" class="slide level2 smaller">
 <h2>Quarto Presentations</h2>
@@ -1600,7 +1689,7 @@ Christophe Dervieux
       }
     });
     </script>
-    <script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","loop":false,"closeEffect":"zoom","openEffect":"zoom"});
+    <script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","loop":false,"openEffect":"zoom","descPosition":"bottom"});
     window.onload = () => {
       lightboxQuarto.on('slide_before_load', (data) => {
         const { slideIndex, slideNode, slideConfig, player, trigger } = data;
