@@ -1,5 +1,5 @@
 ---
-title: "Quarto: </br>Pour des travaux scientifiques reproductible"
+title: "Quarto: </br>Pour des travaux scientifiques reproductibles"
 subtitle: "Une évolution de R Markdown"
 author: "Christophe Dervieux"
 institute: "Posit PBC"
@@ -177,8 +177,8 @@ $ quarto --help
 - Knitr
 - Jupyter
 - Observable JS
-- Julia [(en test dans v1.5 Pre release seulement)]{.make-smaller}
-- Others possible...
+- Julia [(en test dans v1.5 pre-release seulement)]{.make-smaller}
+- Et d'autres possible dans le futur...
 
 ## Knitr {.nostretch .smaller}
 
@@ -328,7 +328,7 @@ L'écosystème R Markdown a été construit sur près d'une décennie - ce qui a
 :::
 
 ::: {.column width="50%"}
-##### Fonctionnalité [(_Terminologie anglaise de la doc_)]{.make-smaller}
+##### Fonctionnalités [(_Terminologie anglaise de la doc_)]{.make-smaller}
 
 -   Floating TOC
 -   Code folding / copying
@@ -545,7 +545,7 @@ flowchart TD
   C --> E[Result two]
 ```
 
-## Ajouts de fonctionnalité: Quarto Extensions {.smaller}
+## Ajout de fonctionnalités: Quarto Extensions {.smaller}
 
 Liste des extensions existantes à <https://quarto.org/docs/extensions/>
 
