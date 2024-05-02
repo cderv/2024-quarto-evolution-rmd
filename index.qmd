@@ -172,7 +172,7 @@ $ quarto --help
 ::: {.footer}
 :::
 
-# Moteurs de calculs disponible
+# Moteurs de calculs disponibles
 
 - Knitr
 - Jupyter
@@ -256,6 +256,50 @@ Demo: <https://quarto.org/docs/interactive/ojs/#example>
 ::: {.footer}
 :::
 
+# Les formats Quarto
+
+Comme R Markdown, on peut produire différents formats de documents.
+
+## De multiples formats...
+
+:::: columns
+::: {.column width="33%"}
+* `format: html`
+* `format: pdf`
+* `format: typst`
+:::
+::: {.column width="33%"}
+* `format: docx`
+* `format: pptx`
+* `format: revealjs`
+:::
+::: {.column width="33%"}
+* `format: gfm`
+* ...
+:::
+::::
+
+```yaml
+format: 
+  html:
+    code-fold: true
+  pdf:
+    lof: true #<1>
+toc: true #<2>
+```
+1. `lof` = _List Of Figures_
+2. Exemple d'option commune aux formats HTML et PDF
+
+::: {.footer}
+:::
+
+## ...basée sur Pandoc 
+
+## {background-video="images/quarto-all-formats.mp4" background-video-loop=true background-video-muted=true}
+
+::: {.footer}
+:::
+
 # Une syntaxe commune coté source
 
 Les fonctionnalités essentielles sont exprimées de la même manière dans tous les formats :
@@ -296,7 +340,7 @@ L'écosystème R Markdown a été construit sur près d'une décennie - ce qui a
 :::
 :::
 
-Certaines fonctionnalités nécessitent des libraires R spécifiques et une syntaxe particulière. Avec Quarto, ces fonctionnalités sont intégrées dans le système de base.
+Certaines fonctionnalités et/ou formats nécessitent des libraires R spécifiques et une syntaxe particulière. Avec Quarto, ces fonctionnalités sont intégrées dans le système de base.
 
 ## Code folding & bouton de copy
 
